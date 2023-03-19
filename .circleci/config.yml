@@ -45,6 +45,7 @@ jobs:
     executor:
       name: android/android-machine
       resource-class: xlarge
+      tag: 2023.02.1
     steps:
       - checkout
       - android/start-emulator-and-run-tests:
