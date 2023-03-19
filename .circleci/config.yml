@@ -38,6 +38,10 @@ jobs:
           path: ~/test-results/junit
       - android/save-gradle-cache
   android-test:
+    parameters:
+      system-image:
+        type: string
+        default: system-images;android-30;google_apis;x86
     executor:
       name: android/android-machine
       resource-class: xlarge
