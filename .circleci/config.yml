@@ -44,7 +44,7 @@ jobs:
         default: system-images;android-30;google_apis;x86
     executor:
       name: android/android-machine
-      resource-class: xlarge
+      resource-class: large
       tag: 2023.02.1
     steps:
       - checkout
