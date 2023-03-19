@@ -10,7 +10,7 @@ orbs:
 jobs:
   assemble-app:
       executor:
-        name: android/android-docker
+        name: android/android-machine
         tag: 2022.08.1
       steps:
         - run:
