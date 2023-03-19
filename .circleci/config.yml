@@ -46,7 +46,7 @@ workflows:
       - build:
           executor:
             name: android/android-docker
-              tag: 2022.08.1
+            tag: 2022.08.1
       - unit-test
       - android-test:
           filters:
