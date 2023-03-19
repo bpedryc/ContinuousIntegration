@@ -45,12 +45,11 @@ jobs:
     executor:
       name: android/android-machine
       resource-class: xlarge
-      tag: 2022.08.1
     steps:
       - checkout
       - android/start-emulator-and-run-tests:
           test-command: ./gradlew connectedDebugAndroidTest
-          system-image: system-images;android-30;google_apis;x86
+          system-image: << parameters.system-image >>
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
