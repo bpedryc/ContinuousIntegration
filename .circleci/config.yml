@@ -13,7 +13,10 @@ jobs:
         name: android/android-docker
         tag: 2022.08.1
       steps:
-        - build
+        - run:
+            name: Assemble debug build
+            command: |
+              ./gradlew assembleDebug
   unit-test:
     executor:
       name: android/android-docker
